@@ -39,7 +39,6 @@
 				
 				<div class="navbar-header page-scroll">
 					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-						<span class="sr-only">Chronicle</span>
 						<span class="icon-bar"></span>
 				  <span class="icon-bar"></span> </button>
 					<div class="logo">
@@ -53,25 +52,22 @@
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse navbar-ex1-collapse nav-right">
 					<ul class="nav navbar-nav navbar-right cl-effect-15">
-						<!-- Hidden li included to remove active class from about link when scrolled up past about section -->
 						<li class="hidden">
 							<a class="page-scroll" href="#page-top"></a>
 						</li>
 						<li>
-							<a class="page-scroll" href="homepage.html">首页</a>
+							<a class="page-scroll" href="foreignpage.html">首页</a>
 						</li>
 						<li>
 							<a class="page-scroll" href="live.html">一对一</a>
 						</li>
-						
-							<a class="page-scroll" href="audio.html">音频教学</a>
-							</a>
+						<li ><a class="page-scroll" href="audio.html">音频教学</a>
 						</li>
 						<li>
 							<a class="page-scroll" href="text.html">资料下载</a>
 						</li>
 						<li>
-							<a class="page-scroll" href="homepage.html">Log out</a>
+							<a class="page-scroll" href="foreignpage.html">Log out</a>
 						</li>
 
 					</ul>
@@ -89,7 +85,35 @@
 		<div class="container">
 			<br/><br/><br/>
 			<h3 class="tittle_w3ls cen">视频教学</h3>
-	
+	    <div>
+			<video id="video" width="80" height="60%" controls="controls">
+			<source id="source" src="video/1.mp4">
+		</video>
+			<br/><br/>
+		<button class="videobt">1教学视频</button> &nbsp;&nbsp;&nbsp;
+		<button class="videobt">2教学视频</button>&nbsp;&nbsp;&nbsp; 
+		<button class="videobt">春教学视频</button> 
+			<style>.videobt{
+				background-color: transparent;
+				font-size:20px;
+				height: 50px;
+				width: 120px;
+				color:white;
+				}</style>
+		<script type="text/javascript">
+			document.getElementById("but1").onclick = function() {
+				document.getElementById("source").src="video/1.mp4";
+				document.getElementById("video").load();
+			}
+			document.getElementById("but2").onclick = function() {
+				document.getElementById("source").src = "video/2.mp4";
+				document.getElementById("video").load();
+			}
+			document.getElementById("but3").onclick = function() {
+				document.getElementById("source").src = "video/春mp4.mp4";
+				document.getElementById("video").load();
+			}
+		</script></div>
 
 		</div>
 	</div>
