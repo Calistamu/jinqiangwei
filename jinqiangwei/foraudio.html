@@ -39,6 +39,7 @@
 				
 				<div class="navbar-header page-scroll">
 					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+						<span class="sr-only">Chronicle</span>
 						<span class="icon-bar"></span>
 				  <span class="icon-bar"></span> </button>
 					<div class="logo">
@@ -52,6 +53,7 @@
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse navbar-ex1-collapse nav-right">
 					<ul class="nav navbar-nav navbar-right cl-effect-15">
+						<!-- Hidden li included to remove active class from about link when scrolled up past about section -->
 						<li class="hidden">
 							<a class="page-scroll" href="#page-top"></a>
 						</li>
@@ -61,7 +63,22 @@
 						<li>
 							<a class="page-scroll" href="live.html">一对一</a>
 						</li>
-						<li ><a class="page-scroll" href="audio.html">音频教学</a>
+						<li class="dropdown"><a class="dropdown-toggle effect-3" data-toggle="dropdown">视频教学 <strong class="caret"></strong> </a>
+						  <ul class="dropdown-menu">
+								<li>
+									<a href="video.html" class="page-scroll">Gallery</a>
+								</li>
+								<li>
+									<a href="video.html" class="page-scroll">Albums</a>
+								</li>
+								<li>
+									<a href="video.html" class="page-scroll">Coming soon</a>
+								</li>
+								<li>
+									<a href="video.html" class="page-scroll">Artists</a>
+								</li>
+
+							</ul>
 						</li>
 						<li>
 							<a class="page-scroll" href="text.html">资料下载</a>
@@ -83,38 +100,31 @@
 	<!--/works-->
 	<div class="works" id="album">
 		<div class="container">
-			<br/><br/><br/>
-			<h3 class="tittle_w3ls cen">视频教学</h3>
-	    <div>
-			<video id="video" width="80" height="60%" loop controls="controls">
-			<source id="source" src="video/1.mp4">
-		</video>
 			<br/><br/>
-		<button class="videobt" id="but1">1教学视频</button> &nbsp;&nbsp;&nbsp;
-		<button class="videobt" id="but2">2教学视频</button>&nbsp;&nbsp;&nbsp; 
-		<button class="videobt" id="but3">春教学视频</button> 
-			<style>.videobt{
-				background-color: transparent;
-				font-size:20px;
-				height: 50px;
-				width: 120px;
-				color:white;
-				}</style>
-		<script type="text/javascript">
-			document.getElementById("but1").onclick = function() {
-				document.getElementById("source").src="video/1.mp4";
-				document.getElementById("video").load();
-			}
-			document.getElementById("but2").onclick = function() {
-				document.getElementById("source").src = "video/2.mp4";
-				document.getElementById("video").load();
-			}
-			document.getElementById("but3").onclick = function() {
-				document.getElementById("source").src = "video/春mp4.mp4";
-				document.getElementById("video").load();
-			}
-		</script></div>
+	
+			<h3 class="tittle_w3ls cen">音频教学</h3>
+					<p class=audioname>半途而废 吕程</p>
+			<audio class="audio" src="audio/半途而废 吕程.mp3" controls="controls">audio</audio>
+			<p class=audioname>除夕 刘琦</p>
+			<audio class="audio" src="audio/除夕 刘琦.mp3" controls="controls">audio</audio>
+			<p class=audioname>春节 刘琦</p>
+			<audio class="audio" src="audio/春节 刘琦.mp3" controls="controls">audio</audio>
+			<p class=audioname>打草惊蛇 王小婷</p>
+			<audio class="audio" src="audio/打草惊蛇 王小婷.mp3" controls="controls">audio</audio>
+            <style>
+				.audioname{color:white;font-size:30px;}
+				.audio{
+        margin: 90px auto;
+        width: 186px;
+        height: 186px;
+        background:no-repeat center bottom;
+				background-color: antiquewhite;
+        background-size:cover;
+    }</style>
+			
 
+			</div>
+<div class="works" id="album"></div>
 		</div>
 	</div>
 
