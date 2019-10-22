@@ -30,7 +30,7 @@
 </head>
 
 
-<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top" background="img/hand-microphone-mic-hold[1].jpg">
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 	<div id="home">
 		<!-- header -->
 		<!-- Navigation -->
@@ -39,7 +39,6 @@
 				
 				<div class="navbar-header page-scroll">
 					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-						<span class="sr-only">Chronicle</span>
 						<span class="icon-bar"></span>
 				  <span class="icon-bar"></span> </button>
 					<div class="logo">
@@ -53,7 +52,6 @@
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse navbar-ex1-collapse nav-right">
 					<ul class="nav navbar-nav navbar-right cl-effect-15">
-						<!-- Hidden li included to remove active class from about link when scrolled up past about section -->
 						<li class="hidden">
 							<a class="page-scroll" href="#page-top"></a>
 						</li>
@@ -61,27 +59,9 @@
 							<a class="page-scroll" href="foreignpage.html">首页</a>
 						</li>
 						<li>
-							<a class="page-scroll" href="audio.html">音频教学</a>
+							<a class="page-scroll" href="live.html">一对一</a>
 						</li>
-							<li class="dropdown">
-							<a  class="dropdown-toggle effect-3" data-toggle="dropdown">视频教学
-								<b class="caret"></b>
-							</a>
-							<ul class="dropdown-menu">
-								<li>
-									<a href="video.html" class="page-scroll">字词精讲</a>
-								</li>
-								<li>
-									<a href="video.html" class="page-scroll">诗文解读</a>
-								</li>
-								<li>
-									<a href="video.html" class="page-scroll">情景对话</a>
-								</li>
-								<li>
-									<a href="video.html" class="page-scroll">其他</a>
-								</li>
-
-							</ul>
+						<li ><a class="page-scroll" href="audio.html">音频教学</a>
 						</li>
 						<li>
 							<a class="page-scroll" href="text.html">资料下载</a>
@@ -99,30 +79,45 @@
 				
 			<!-- /.container -->
 		</nav>
-<div class="works" id="album">
+	</div>
+	<!--/works-->
+	<div class="works" id="album">
 		<div class="container">
 			<br/><br/><br/>
-			<h3 class="tittle_w3ls cen">面对面直播课堂</h3>
-			<video src="video/1.mp4" controls="controls" align="center" height=600px; weight=800px; style="text-align: center;"></video>
-			<div>
-				<br/>
-				<button class="aboutclass" style="margin-right: 0px;">上 课</button>&nbsp;&nbsp;&nbsp;&nbsp;<button class="aboutclass"> 下课</button>
-				<style>.aboutclass{
-									background: Transparent;
-									color:white;
-									size:300px;
-									height: 40px;
-									width: 80px;
-									}</style>
-				<br/><br/>
-			<textarea cols="122" rows="8">在这里向老师/学生发送文字、文件、图片</textarea>
-				<button class="aboutclass" style="margin-left: 0px;">发 送</button>
-			</div>
-              
+			<h3 class="tittle_w3ls cen">视频教学</h3>
+	    <div>
+			<video id="video" width="80" height="60%" loop controls="controls">
+			<source id="source" src="video/1.mp4">
+		</video>
+			<br/><br/>
+		<button class="videobt" id="but1">1教学视频</button> &nbsp;&nbsp;&nbsp;
+		<button class="videobt" id="but2">2教学视频</button>&nbsp;&nbsp;&nbsp; 
+		<button class="videobt" id="but3">春教学视频</button> 
+			<style>.videobt{
+				background-color: transparent;
+				font-size:20px;
+				height: 50px;
+				width: 120px;
+				color:white;
+				}</style>
+		<script type="text/javascript">
+			document.getElementById("but1").onclick = function() {
+				document.getElementById("source").src="video/1.mp4";
+				document.getElementById("video").load();
+			}
+			document.getElementById("but2").onclick = function() {
+				document.getElementById("source").src = "video/2.mp4";
+				document.getElementById("video").load();
+			}
+			document.getElementById("but3").onclick = function() {
+				document.getElementById("source").src = "video/春mp4.mp4";
+				document.getElementById("video").load();
+			}
+		</script></div>
+
 		</div>
 	</div>
 
-<div class="works" id="album"><h1><br/><br/></h1></div>
 	<!-- js -->
 	<script src="js/jquery-2.2.3.min.js"></script>
 	<!-- //js -->
