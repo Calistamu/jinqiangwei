@@ -700,13 +700,55 @@
 
 /* Image Background  */
 
-	.image-bg{
-		background-image:url(../images/homeslide.jpg);
+	.image-bgforvideoall{
+		background-image:url(../images/forvideoall.jpg);
 		background-position: center center;
 		background-repeat: no-repeat;
 		background-size:cover;
 	}
-
+                .image-bghomevideoall{
+		background-image:url(../images/homevideoall.jpg);
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size:cover;
+	}
+               .image-bgforlive{
+		background-image:url(../images/forlive.jpg);
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size:cover;
+	}
+                .image-bghomelive{
+		background-image:url(../images/homelive.jpg);
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size:cover;
+	}
+      .image-bgforaudio{
+		background-image:url(../images/foraudio.jpg);
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size:cover;
+	}
+                .image-bghomeaudio{
+		background-image:url(../images/homeaudio.jpg);
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size:cover;
+	}
+      .image-bgfortext{
+		background-image:url(../images/fortext.jpg);
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size:cover;
+	}
+                 .image-bghometext{
+		background-image:url(../images/hometext.jpg);
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size:cover;
+	}
+              
 	body.parallax .image-bg{
 		background-attachment: fixed;
 	}

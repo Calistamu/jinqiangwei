@@ -41,7 +41,18 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
 }
-
+body.home{
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    background: url("../images/background1.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
 body a {
     transition:0.5s all;
     -webkit-transition:0.5s all;
