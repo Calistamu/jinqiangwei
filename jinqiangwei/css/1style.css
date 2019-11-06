@@ -748,7 +748,52 @@
 		background-repeat: no-repeat;
 		background-size:cover;
 	}
-              
+               .image-bgforvideo1{
+		background-image:url(../images/forvideo1.jpg);
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size:cover;
+	}
+                 .image-bghomevideo1{
+		background-image:url(../images/homevideo1.jpg);
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size:cover;
+	}
+  .image-bgforvideo2{
+		background-image:url(../images/forvideo2.jpg);
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size:cover;
+	}
+                 .image-bghomevideo2{
+		background-image:url(../images/homevideo2.jpg);
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size:cover;
+	}  .image-bgforvideo3{
+		background-image:url(../images/forvideo3.jpg);
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size:cover;
+	}
+                 .image-bghomevideo3{
+		background-image:url(../images/homevideo3.jpg);
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size:cover;
+	}  .image-bgforvideo4{
+		background-image:url(../images/forvideo4.jpg);
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size:cover;
+	}
+                 .image-bghomevideo4{
+		background-image:url(../images/homevideo4.jpg);
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size:cover;
+	}
 	body.parallax .image-bg{
 		background-attachment: fixed;
 	}
