@@ -5,7 +5,7 @@
 
     <meta charset="utf-8" />   
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
-	 <title>国际版一对一</title>
+	 <title>国际版教你读诗</title>
 	 
     <!--Favicon -->
 	<link rel="icon" type="image/png" href="images/favicon.png" />
@@ -60,7 +60,7 @@
 							<a class="page-scroll" href="foreignpage.html">home</a>
 						</li>
 						<li>
-							<a class="page-scroll" href="foraudio.html">audio</a>
+							<a class="page-scroll" href="forlive.html">live</a>
 						</li>
 							<li class="dropdown">
 							<a  class="dropdown-toggle effect-3" data-toggle="dropdown" href="forvideoall.html">video
@@ -74,9 +74,6 @@
 									<a href="forvideo1.html" class="page-scroll">见字如面</a>
 								</li>
 								<li>
-									<a href="forvideo2.html" class="page-scroll">教你读诗</a>
-								</li>
-								<li>
 									<a href="forvideo3.html" class="page-scroll">声临其境</a>
 								</li>
 								<li>
@@ -86,22 +83,21 @@
 							</ul>
 						</li>
 						<li>
-							<a class="page-scroll" href="fortext.html">ducumentation</a>
+							<a class="page-scroll" href="foraudio.html">audio</a>
 						</li>
 							<li>
-							<a class="page-scroll" href="#">feedback</a>
+							<a class="page-scroll" href="fortext.html">document</a>
 						</li>
 						<li>
 							<a class="page-scroll" href="foreignpage.html">Log out</a>
 						</li>
 
 					</ul>
-
 				</div>
 
 				<!-- /.navbar-collapse -->
 
-				
+				</div>
 			<!-- /.container -->
 		</nav>
 	
@@ -110,29 +106,57 @@
 	<!-- Home -->
 	<section id="home" class="container relative">
 		<!-- Ful Screen Home -->
-		<div id="fullscreen" class="image-bgforlive" align="center"></div>		
+		<div id="fullscreen" class="image-bgforvideo2" align="center"></div>		
 		<!-- Home Elements -->
 		<div class="home-elements">
 			<!-- Home Inner -->
 				<div class="container" align="center">
 			<br/><br/><br/><br/><br/><br/>
-			<h3 class="tittle_w3ls cen">Face-to-Face live class</h3>
-			<video src="video/foreign/出口成章/shopping84.mov"="controls" align="center" height=600px; weight=800px; style="text-align: center;"></video>
-			<div align="center">
-				<br/>
-				<button class="aboutclass" style="margin-right: 0px;">上 课</button>&nbsp;&nbsp;&nbsp;&nbsp;<button class="aboutclass"> 下课</button>
-				<style>.aboutclass{
-									background: Transparent;
-									color:white;
-									size:300px;
-									height:35px;
-									width: 60px;
-					align-content: center;
-									}</style>
-				<br/><br/>
-			<textarea cols="122" rows="8">在这里向老师/学生发送文字、文件、图片</textarea>
-				<button class="aboutclass" style="margin-left: 0px;">发 送</button>
-			</div>
+			<h3 class="tittle_w3ls cen"></h3>
+			<div>
+			<video id="video" width="55%" height="35%" loop controls="controls">
+			<source id="source" src="video/foreign/教你读书/回乡偶书.MP4">
+		</video><br/><br/>
+		<button class="videobt" id="but1">回乡偶书</button> &nbsp;&nbsp;&nbsp;
+		<button class="videobt" id="but2">江雪</button>&nbsp;&nbsp;&nbsp; 
+		<button class="videobt" id="but3">静夜思</button>&nbsp;&nbsp;&nbsp; 
+		<button class="videobt" id="but4">绝句杜甫</button> &nbsp;&nbsp;&nbsp;
+		<button class="videobt" id="but5">咏鹅</button>&nbsp;&nbsp;&nbsp; 
+		<button class="videobt" id="but6">咏柳</button>&nbsp;&nbsp;&nbsp; 
+			<style>.videobt{
+				background-color: transparent;
+				font-size:20px;
+				height: 50px;
+				width: 120px;
+				color:white;
+				}</style>
+		<script type="text/javascript">
+			document.getElementById("but1").onclick = function() {
+				document.getElementById("source").src="video/foreign/教你读书/回乡偶书.MP4";
+				document.getElementById("video").load();
+			}
+			document.getElementById("but2").onclick = function() {
+				document.getElementById("source").src ="video/foreign/教你读书/江雪.mov";
+				document.getElementById("video").load();
+			}
+			document.getElementById("but3").onclick = function() {
+				document.getElementById("source").src = "video/foreign/教你读书/静夜思.mp4";
+				document.getElementById("video").load();
+			}
+			document.getElementById("but4").onclick = function() {
+				document.getElementById("source").src="video/foreign/教你读书/绝句杜甫.mov";
+				document.getElementById("video").load();
+			}
+			document.getElementById("but5").onclick = function() {
+				document.getElementById("source").src ="video/foreign/教你读书/咏鹅.mov";
+				document.getElementById("video").load();
+			}
+			document.getElementById("but6").onclick = function() {
+				document.getElementById("source").src = "video/foreign/教你读书/咏柳.mov";
+				document.getElementById("video").load();
+			}
+		</script></div>
+
               
 		</div>
 		</div><!-- End Home Elements -->
